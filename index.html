@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demo page showing various HTML tags and their functionalities">
+    <meta name="author" content="ChatGPT">
+    <title>HTML Tags Demonstration</title>
+    <base href="https://www.example.com/">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>HTML Tags Demonstration</h1>
+
+    <hgroup>
+        <h2>Heading Group Example</h2>
+        <h3>Subheading within the group</h3>
+    </hgroup>
+
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <div>
+        <h2>Embedded Content</h2>
+        <iframe src="https://www.example.com" title="Example Iframe"></iframe>
+    </div>
+
+    <div>
+        <h2>Lists</h2>
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+        </ul>
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+        </ol>
+        <dl>
+            <dt>Definition Term</dt>
+            <dd>Definition Description</dd>
+        </dl>
+    </div>
+
+    <div>
+        <h2>Figure and Figcaption</h2>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figcaption>This is a placeholder image.</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <h2>Details and Summary</h2>
+        <details>
+            <summary>Click to expand</summary>
+            <p>This is the detailed content.</p>
+        </details>
+    </div>
+
+    <dialog open>
+        <p>This is a dialog box.</p>
+        <button onclick="this.parentElement.close()">Close</button>
+    </dialog>
+
+    <div>
+        <h2>Text Content</h2>
+        <p>This is a paragraph. <br> This is a new line using the br tag.</p>
+        <pre>
+            This is preformatted text.
+        </pre>
+        <blockquote>This is a blockquote.</blockquote>
+        <q>This is an inline quote.</q>
+        <cite>This is a citation.</cite>
+        <p>An <abbr title="abbreviation">abbr</abbr> and a <dfn title="definition">dfn</dfn> element.</p>
+        <p><code>This is code</code>, <kbd>this is keyboard input</kbd>.</p>
+        <p><b>This is bold text</b> and <strong>this is strong text</strong>.</p>
+        <p><i>This is italic text</i> and <em>this is emphasized text</em>.</p>
+        <p><mark>This is marked text</mark> and <small>This is small text</small>.</p>
+        <p><del>This is deleted text</del> and <ins>This is inserted text</ins>.</p>
+        <p>This is a <sub>subscript</sub> and a <sup>superscript</sup>.</p>
+        <p>The current time is <time datetime="2023-06-04T20:00">8 PM, June 4, 2023</time>.</p>
+        <p>Data example: <data value="42">Answer to the Ultimate Question of Life</data></p>
+    </div>
+
+    <div>
+        <h2>Links, Images, and Media</h2>
+        <p>This is a <a href="https://www.example.com">link</a>.</p>
+        <map name="example-map">
+            <area shape="rect" coords="34,44,270,350" alt="Example" href="https://www.example.com">
+        </map>
+        <img src="https://via.placeholder.com/150" alt="Example Image" usemap="#example-map">
+    </div>
+
+    <div>
+        <h2>Multimedia</h2>
+        <picture>
+            <source srcset="https://via.placeholder.com/150" media="(min-width: 800px)">
+            <img src="https://via.placeholder.com/100" alt="Responsive Image">
+        </picture>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(20, 20, 150, 100);
+        </script>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+    </div>
+
+    <div>
+        <h2>Audio and Video</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</body>
+</html>
